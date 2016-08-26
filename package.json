@@ -34,5 +34,18 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/bloggify-github-login/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/bloggify-github-login#readme"
+  "homepage": "https://github.com/IonicaBizau/bloggify-github-login#readme",
+  "dependencies": {
+    "gh.js": "^3.0.6",
+    "github-oauth": "^0.2.2"
+  },
+  "bloggify": {
+    "config": {
+      "githubClient": "",
+      "githubSecret": "",
+      "loginURI": "/login",
+      "callbackURI": "/login-callback",
+      "scope": "user:email"
+    }
+  }
 }
