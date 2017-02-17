@@ -74,19 +74,21 @@ GitHub.on("login-success", (token, user, lien) => {
 
  To create a GitHub application, [click here](https://github.com/settings/applications/new).
 
- :arrow_up: The following events are emitted by the module:
+#### Events
 
-  - **`login-error`** (err, [lien](https://github.com/LienJS/Lien), ghApiClient)
+:arrow_up: The following events are emitted by the module:
 
-    An error happened durring the error.
+ - **`login-error`** (err, [lien](https://github.com/LienJS/Lien), ghApiClient)
 
-  - **`login-success`** token, user, res.lien, ghApiClient);
+   An error happened durring the error.
 
-     The user metadata was fetched. If you don't want to fetch
+ - **`login-success`** token, user, res.lien, ghApiClient);
 
-  - **`token`** (token, lien, ghApiClient)
+    The user metadata was fetched. If you don't want to fetch
 
-     Emitted when the token is successfully got.
+ - **`token`** (token, lien, ghApiClient)
+
+    Emitted when the token is successfully got.
 
 
 
