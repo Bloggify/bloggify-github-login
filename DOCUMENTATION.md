@@ -2,13 +2,27 @@
 
 You can see below the API reference of this module.
 
-### `bloggifyGithubLogin(a, b)`
-Login with GitHub for Bloggify.
+### Plugin Configuration
 
-#### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+ - `loginURI` (String): The application login url.
+ - `callbackURI`(String): The application login callback url.
+ - `githubClient` (String): The application client id.
+ - `githubSecret` (String): The application client secret.
+ - `scope` (String): The user scopes (default: `user:email`).
 
-#### Return
-- **Number** Return description.
+ To create a GitHub application, [click here](https://github.com/settings/applications/new).
+
+ :arrow_up: The following events are emitted by the module:
+
+  - **`login-error`** (err, [lien](https://github.com/LienJS/Lien), ghApiClient)
+
+    An error happened durring the error.
+
+  - **`login-success`** token, user, res.lien, ghApiClient);
+
+     The user metadata was fetched. If you don't want to fetch
+
+  - **`token`** (token, lien, ghApiClient)
+
+     Emitted when the token is successfully got.
 
