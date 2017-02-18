@@ -78,15 +78,15 @@ GitHub.on("login-success", (token, user, lien) => {
 
 :arrow_up: The following events are emitted by the module:
 
- - **`login-error`** (err, [lien](https://github.com/LienJS/Lien), ghApiClient)
+ - **`login-error`** (`err`, [`lien`](https://github.com/LienJS/Lien), ghApiClient)
 
    An error happened durring the error.
 
- - **`login-success`** token, user, res.lien, ghApiClient);
+ - **`login-success`** (`token`, `user`, `lien`, `ghApiClient`);
 
     The user metadata was fetched. If you don't want to fetch
 
- - **`token`** (token, lien, ghApiClient)
+ - **`token`** (`token`, `lien`, `ghApiClient`)
 
     Emitted when the token is successfully got.
 
