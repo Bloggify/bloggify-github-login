@@ -61,11 +61,22 @@ GitHub.on("login-success", (token, user, lien) => {
 });
 ```
 
+## :question: Get Help
+
+There are few ways to get help:
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+ 2. For bug reports and feature requests, open issues. :bug:
+ 3. For direct and quick help from me, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
+
 ## :memo: Documentation
 
 
-### Plugin Configuration
+### `bloggify:init(config)`
 
+#### Params
+- **Object** `config`:
  - `loginURI` (String): The application login url.
  - `callbackURI`(String): The application login callback url.
  - `githubClient` (String): The application client id.
@@ -82,11 +93,11 @@ GitHub.on("login-success", (token, user, lien) => {
 
    An error happened durring the error.
 
- - **`login-success`** (`token`, `user`, `lien`, `ghApiClient`);
+ - **`login-success`** (`token`, `user`, `ctx`, `ghApiClient`)
 
     The user metadata was fetched. If you don't want to fetch
 
- - **`token`** (`token`, `lien`, `ghApiClient`)
+ - **`token`** (`token`, `ctx`, `ghApiClient`)
 
     Emitted when the token is successfully got.
 
