@@ -37,14 +37,5 @@
   "dependencies": {
     "gh.js": "^3.0.6",
     "github-oauth": "^0.2.2"
-  },
-  "bloggify": {
-    "config": {
-      "githubClient": "",
-      "githubSecret": "",
-      "loginURI": "/login",
-      "callbackURI": "/login-callback",
-      "scope": "user:email"
-    }
   }
 }
