@@ -2,9 +2,8 @@
 
 You can see below the API reference of this module.
 
-### `bloggify:init(config)`
+### Plugin Configuration
 
-#### Params
 - **Object** `config`:
  - `loginURI` (String): The application login url.
  - `callbackURI`(String): The application login callback url.
